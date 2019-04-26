@@ -154,6 +154,24 @@ $$NM = min{NM_L, NM_H}$$
 		* Usually $\frac{\mu_N}{\mu_p} = 2.5$$ => $$ (W/L)_p = 2.5 (W/L)_N$$
 ## Design NOR and NAND - using CMOS inverter
 	### Two input NOR gate (2 Mps and 2 MNs)
+		* M_p's connected in series(top near V_DD, (G_N) M_N's
+		  connected in parallel, M_p1 and M_N1 source and drain connected
+		  Gates of M_p1 and M_N1 are connected,
+		  N_N2 and M_p2 gates are connected. Output taken
+		  accross M_p1 and M_n1 
+		* $$1/G_p = 1/g + 1/g => g=2G_p$$
+		* $$(W/L)_{p,tot} = 2(W/L)_p$$
+		* $$(W/L)_{N,tot} = (W/L)_N$$
+	
+	### Two input NAND gate (2 Mps and 2 MNs)
+		* M_N's connected in series near GRND,
+		  Output is taken across the intersection
+		  of M_N1 and M_P1,  M_P1 and M_P2 are 
+		  connected in paraellel, gates are connected
+		  from each M_Ni to M_pi like inverter.
+		* $$1/G_N = 1/g + 1/g => g=2G_N$$
+		* $$(W/L)_{N,tot} = 2(W/L)_N$$
+		* $$(W/L)_{p,tot} = (W/L)_p$$
 		
 
 
