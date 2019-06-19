@@ -2,8 +2,11 @@
 ## Basic ECL circuit (Differential amplifier)
 Configuration:
 	* Q1 - input transistors
+	
 	* Q2 - reference transistor
+	
 	* Emitter of both connected
+	
 		* R_E connected to E node to $$-V_{EE}$$
 
 	* Two R_C's
@@ -173,7 +176,8 @@ $$T_{on} = (R_A + R_B) C ln(2)$$
 $$T_{off} = R_B * C ln(2)$$
 
 ### Period of the square wave becomes:
-$$T = T_{on} + T_{off}(R_A+2R_B)C*ln(2)$$
+$$T = T_{on} + T_{off}$$
+
 $$Duty \;Cycle = \frac{T_{on}}{T} = \frac{R_A+R_B}{R_A + 2*R_B}$$
 
 
